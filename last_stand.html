@@ -13,11 +13,15 @@
     <h2>Introduction</h2>
     <p>Last Stand is my first project in Unity. It required the team to create a Bullet Hell game using only primitive shapes and without using the Unity inspector.</p>
     <h2>Gameplay</h2>
-    
+    Last stand is a rhythm-based bullet hell game where you have to survive as long as possible against incoming projectiles. The game is played with the arrow keys, the sole goal is to survive. If the player has survived long enough, the boss will be defeated and a new boss will appear.
+    <img src="images/phase1.1.gif" width="600" height="400" alt="phase1">
+    <img src="images/phase2.gif" width="600" height="400" alt="phase2">
+    <img src="images/phase3.gif" width="600" height="400" alt="phase3">
     <h2>Process</h2>
-    We had discussed early on my main focus would be on the game mechanics, the weapons, the art and the back-end, my partner would focus on enemies.  
-    Something that was new for me was back-end, I had to learn this completely from scratch. I ended up using Google Firebase for this, post and retrieving data through only JavaScript.
-    In the end, I learned a solid amount of new things for Javascript and back-end. I learned here to use classes for Javascript and to use multiple files to make the code easier to maintain.  
+    Of all the 6 projects I had to do for school, with Last Stand I by far had the most fun making. It really forced me to be creative with shapes in order to create a fun looking and interesting game. 
+    The goal was for every member of the team to create one of the 4 bosses, I got to create the "final" boss, which had 3 phases. It needed to be the most challenging for the players, but this also meant it was the most challenging for me to create.  
+    Every phase got indicated by a new part in the song (this will become clear once playing the game), each new phase would introduce new mechanics and new projectiles, but also reuse some of the old ones to create familiarity.
+    One of the struggles I also came across was making sure it would not create lag with this many projectiles. First I solved this by destroying the objects, but later I learned how to use object pooling to make sure the game would run smoothly.
     <a href="https://oege.ie.hva.nl/~baark3/LastStand/" target="_blank">Play the game!</a>
 </body>
 </html>
