@@ -1,0 +1,40 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  // Typography
+  h1, h2 {
+    color: #0056b3;
+  }
+  
+  h1 {
+    font-size: 2em; // Large heading
+  }
+  
+  h2 {
+    font-size: 1.5em; // Subheading
+    margin-top: 20px;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  // Emphasized text styling
+  em {
+    color: #d35400;
+    font-style: normal; // Override default italic style
+  }
+  
+  // Image styling
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block; // Prevents inline gaps
+    margin: 0 auto; // Center images
+  }
