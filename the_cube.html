@@ -1,30 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Cube</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body>
-    <h1>The Cube</h1>
-    <p>Hardware interfacing</p>
-    <p><em>C++, HTML, SCSS, JS</em></p>
 
-    <h2>Introduction</h2>
-    <p>This project was done with the Minor Internet of Things, after I had swapped my course from Game Development to Technical Informatics. The Minor had 2 seperate assignments each lasting 10 weeks. This page is dedicated to the individual project, the making of "The Cube"</p>
-    <h2>Process</h2>
-    Here I first came in contact with C++, which took some time getting used to. It was not allowed to use (Micro)Python, so I had to learn C++ from scratch. There were several Blueprints to choose from, but seeing as I had previous experience with making games, I went for the handheld device blueprint.
-    The Cube is a cubical handheld device that has buttons on every face. It has a small LCD display on the front that gives the player prompts to follow. Not only are there buttons, there are several other sensors that are used to complete the prompts.  
-    The goal of the game is to follow the prompts as fast as possible. Everytime you complete a prompt, you get a point and also get less time for the next. The game has 3 modes:  
-    <ul>
-        <li>Normal mode: The normal mode is the standard mode where you have to follow the prompts as fast as possible.</li>
-        <li>Easy mode: You have double time for the prompts, but the score is not added to the database.</li>
-        <li>Colourblind mode: Instead of prompts saying "press the blue button", it will say "press the left button".</li>
-    </ul>
-    <h2>Hardware</h2>
-    The Cube is made with an ESP32, which connects to the internet to store and access the scores of the players. The ESP32 is connected to the LCD display, the buttons and the sensors. The sensors are used to detect if the player has completed the prompt correctly.  
-    <h2>Features</h2>
-    <img src="images/cube-1.png" width=800 height=400 alt="Overview">
+<body class="cube">
+    <div class="container">
+        <h1>The Cube</h1>
+        <p>Hardware Interfacing</p>
+        <p><em>C++, HTML, SCSS, JS</em></p>
+
+        <h2>Introduction</h2>
+        <p>
+            This project was part of the Minor Internet of Things after I switched from Game Development to Technical Informatics. 
+            The minor had two separate assignments, each lasting 10 weeks. This page is dedicated to the individual project, "The Cube".
+        </p>
+
+        <h2>Process</h2>
+        <p>
+            This was my first time working with C++, which took some time to get used to. Python was not allowed, so I had to learn C++ from scratch. 
+            Several blueprints were available to choose from, but given my experience with making games, I chose the handheld device blueprint.
+        </p>
+        <p>
+            <strong>The Cube</strong> is a cubical handheld device with buttons on every face and a small LCD display on the front that gives players prompts to follow. 
+            The goal is to follow the prompts as quickly as possible. Each time a prompt is completed, the player scores a point and gets less time for the next prompt. The game has three modes:
+        </p>
+        <ul>
+            <li><strong>Normal Mode:</strong> The standard mode where you follow prompts as fast as possible.</li>
+            <li><strong>Easy Mode:</strong> You have double time for the prompts, but the score is not added to the database.</li>
+            <li><strong>Colourblind Mode:</strong> Instead of prompts like "press the blue button", it says "press the left button".</li>
+        </ul>
+
+        <h2>Hardware</h2>
+        <p>
+            <strong>The Cube</strong> is made with an ESP32, which connects to the internet to store and access players' scores. The ESP32 is connected to the LCD display, the buttons, and the sensors that detect whether the player has completed the prompt correctly.
+        </p>
+
+        <h2>Features</h2>
+        <video width="400px" height="600px" controls>
+            <source src="images/cube.mp4" type="video/mp4" />
+        </video>
+    </div>
 </body>
+
 </html>

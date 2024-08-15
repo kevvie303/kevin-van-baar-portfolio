@@ -1,32 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A-Moebe</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body>
-    <h1>A-Moebe</h1>
-    <p>Hardware interfacing</p>
-    <p><em>Python, HTML, SCSS, JS, Flask</em></p>
 
-    <h2>Introduction</h2>
-    <p>A-Moebe is an ongoing project that I've been developing with my girlfriend since June of 2023. It's a gamerunner that can be installed on a Raspberry Pi to control the gameflow of an escaperoom.</p>
-    <h2>Process</h2>
-    This system started with development because a friend had started his own escaperoom business. He needed a system that would automate a lot of the processes that are normally done manually. My girlfriend and I began making multiple MVP's in order to create what was necessary.
-    I did all of the back-end, using Python, Flask and a lot of JavaScript. She did most of the front-end, also teaching me how to do so in the process. 
-    It started very basic, using ongoing SSH connections to set certain outputs on the Raspberry Pi to high or low. This was done to control the lights and magnetic locks in the room. 
-    This was a solid proof of concept but was too slow for the real-time data we needed. We then switched to using WebSockets/MQTT to send data back and forth. This was a lot faster and more reliable.
-    <h2>Features</h2>
-    A-Moebe features a lot of different things that can be controlled in the room.  
-    <img src="images/amoebe-1.png" width=800 height=400 alt="Overview">   
-    A resetlist that will make it impossible to make any mistakes while resetting, since the game can only be started when all steps are completed.
-    <img src="images/tasks.gif" width=800 height=400 alt="Overview">   
-    A tasklist during the game so the host knows where the players are, and can solve tasks for players incase there are no sensors in place. This will execute any consequences that are tied to that task (like turning on lights, opening locks, etc).
-    <img src="images/amoebe-2.png" width=800 height=400 alt="Overview">
-    A list of actuators, this can be used during or outside of a game in order to forcefully turn on or off certain outputs. 
-    <img src="images/amoebe-3.png" width=800 height=400 alt="Overview">
-    A list of statusses, this list is updated in realtime. Here the host can see whether lights are on/off, locks are locked or unlocked, whether certain sensors are triggered or what the last entered code on a keypad is, etc. Everything gets displayed here.
+<body class="a-moebe">
+    <div class="container">
+        <h1>A-Moebe</h1>
+        <p class="project-type">Hardware Interfacing</p>
+        <p class="tech-stack"><em>Python, HTML, SCSS, JS, Flask</em></p>
+
+        <h2>Introduction</h2>
+        <p>
+            A-Moebe is an ongoing project that I've been developing with my girlfriend since June of 2023. 
+            It's a gamerunner that can be installed on a Raspberry Pi to control the game flow of an escape room.
+        </p>
+
+        <h2>Process</h2>
+        <p>
+            This system started development because a friend began his own escape room business and needed a system to automate many manual processes.
+            My girlfriend and I created multiple MVPs to meet the necessary requirements.
+        </p>
+        <p>
+            I handled all of the back-end development using Python, Flask, and a lot of JavaScript, while she focused on the front-end, also teaching me in the process.
+        </p>
+        <p>
+            Initially, we used ongoing SSH connections to control the Raspberry Pi's outputs for lights and magnetic locks, but this was too slow for real-time data needs.
+            We then switched to using WebSockets/MQTT for faster and more reliable communication.
+        </p>
+
+        <h2>Features</h2>
+        <p>A-Moebe includes several features to control different aspects of the escape room:</p>
+        <ul>
+            <li>
+                <strong>Reset List:</strong> Ensures no mistakes during resetting, as the game can only start when all steps are completed.
+                <img src="images/tasks.gif" width="800" height="400" alt="Reset List Overview" class="feature-image">
+            </li>
+            <li>
+                <strong>Task List:</strong> Shows the host where players are in the game and allows solving tasks if no sensors are in place, triggering consequences like lights or locks.
+                <img src="images/amoebe-2.png" width="800" height="400" alt="Task List Overview" class="feature-image">
+            </li>
+            <li>
+                <strong>Actuator Control:</strong> Allows forced control of outputs during or outside of a game.
+                <img src="images/amoebe-3.png" width="800" height="400" alt="Actuator Control Overview" class="feature-image">
+            </li>
+            <li>
+                <strong>Status Monitoring:</strong> Real-time updates on lights, locks, sensor triggers, keypad entries, and more, all displayed for the host.
+                <img src="images/amoebe-1.png" width="800" height="400" alt="Status Monitoring Overview" class="feature-image">
+            </li>
+        </ul>
+        <p>
+            <a href="https://github.com/kevvie303/A-Moebe-fort/tree/erb-rooms" target="_blank" class="play-link">See the GitHub page and code here!</a>
+        </p>
+    </div>
 </body>
+
 </html>

@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Last Stand</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body>
-    <h1>Last Stand</h1>
-    <p>Game design and development</p>
-    <p><em>C#, Unity, PHP, MySQL</em></p>
 
-    <h2>Introduction</h2>
-    <p>Last Stand is my first project in Unity. It required the team to create a Bullet Hell game using only primitive shapes and without using the Unity inspector.</p>
-    <h2>Gameplay</h2>
-    Last stand is a rhythm-based bullet hell game where you have to survive as long as possible against incoming projectiles. The game is played with the arrow keys, the sole goal is to survive. If the player has survived long enough, the boss will be defeated and a new boss will appear.
-    <img src="images/phase1.1.gif" width="600" height="400" alt="phase1">
-    <img src="images/phase2.gif" width="600" height="400" alt="phase2">
-    <img src="images/phase3.gif" width="600" height="400" alt="phase3">
-    <h2>Process</h2>
-    Of all the 6 projects I had to do for school, with Last Stand I by far had the most fun making. It really forced me to be creative with shapes in order to create a fun looking and interesting game. 
-    The goal was for every member of the team to create one of the 4 bosses, I got to create the "final" boss, which had 3 phases. It needed to be the most challenging for the players, but this also meant it was the most challenging for me to create.  
-    Every phase got indicated by a new part in the song (this will become clear once playing the game), each new phase would introduce new mechanics and new projectiles, but also reuse some of the old ones to create familiarity.
-    One of the struggles I also came across was making sure it would not create lag with this many projectiles. First I solved this by destroying the objects, but later I learned how to use object pooling to make sure the game would run smoothly.
-    <a href="https://oege.ie.hva.nl/~baark3/LastStand/" target="_blank">Play the game!</a>
+<body class="last-stand">
+    <div class="container">
+        <h1>Last Stand</h1>
+        <p>Game Design and Development</p>
+        <p><em>C#, Unity, PHP, MySQL</em></p>
+
+        <h2>Introduction</h2>
+        <p>
+            <strong>Last Stand</strong> is my first project in Unity. The goal was to create a Bullet Hell game using only primitive shapes without using the Unity Inspector.
+        </p>
+
+        <h2>Gameplay</h2>
+        <p>
+            <strong>Last Stand</strong> is a rhythm-based bullet hell game where you must survive as long as possible against incoming projectiles. The game is played with the arrow keys, and the sole goal is survival. Defeating the boss after surviving long enough leads to a new boss appearance.
+        </p>
+        <div class="images">
+            <img src="images/phase1.1.gif" width="600" height="400" alt="Phase 1">
+            <img src="images/phase2.gif" width="600" height="400" alt="Phase 2">
+            <img src="images/phase3.gif" width="600" height="400" alt="Phase 3">
+        </div>
+
+        <h2>Process</h2>
+        <p>
+            Of all the six projects I had to do for school, <strong>Last Stand</strong> was by far the most enjoyable to create. It really forced me to be creative with shapes to make a fun and interesting game. 
+            The goal was for every team member to create one of the four bosses, and I got to create the "final" boss, which had three phases.
+        </p>
+        <p>
+            Each phase was introduced by a new part of the song, introducing new mechanics and projectiles, while also reusing some of the old ones for familiarity. 
+            I also learned about object pooling to ensure the game ran smoothly without lag, especially with many projectiles on the screen.
+        </p>
+        <p>
+            <a href="https://oege.ie.hva.nl/~baark3/LastStand/" target="_blank">Play Last Stand</a>
+        </p>
+    </div>
 </body>
+
 </html>

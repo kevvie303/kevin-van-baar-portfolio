@@ -1,37 +1,129 @@
+/* Global Styles */
 body {
-  font-family: "Arial", sans-serif;
-  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
   color: #333;
   line-height: 1.6;
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
 h1, h2 {
-  color: #0056b3;
+  color: #444;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 h1 {
-  font-size: 2em;
-}
-
-h2 {
-  font-size: 1.5em;
+  font-size: 2.5rem;
   margin-top: 20px;
 }
 
+h2 {
+  font-size: 2rem;
+  margin-top: 30px;
+}
+
+/* Text Styling */
 p {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  padding: 0 15px;
 }
 
 em {
-  color: #d35400;
-  font-style: normal;
+  font-style: italic;
+  color: #555;
 }
 
+/* Lists */
+ul {
+  margin: 20px 0;
+  padding: 0 20px;
+  list-style-type: disc;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: #008cba;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Images */
 img {
   max-width: 100%;
   height: auto;
   display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+/* Video */
+video {
+  display: block;
+  margin: 20px auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Specific Page Styling */
+.cube {
+  background-color: #e8f7ff;
+}
+
+.last-stand {
+  background-color: #fff5f7;
+}
+
+.portfolio {
+  background-color: #fff;
+}
+
+.fruity-frank {
+  background-color: #fffae6;
+}
+
+.a-moebe {
+  background-color: #e6ffe6;
+}
+
+/* Container for Padding and Centering Content */
+.container {
+  width: 90%;
+  max-width: 1000px;
   margin: 0 auto;
+  padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  ul {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
