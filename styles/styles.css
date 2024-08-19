@@ -12,6 +12,7 @@ h1, h2 {
   color: #444;
   margin-bottom: 20px;
   text-align: center;
+  font-family: "Ubuntu Mono";
 }
 
 h1 {
@@ -28,11 +29,13 @@ h2 {
 p {
   margin-bottom: 20px;
   padding: 0 15px;
+  font-family: "Ubuntu Mono";
 }
 
 em {
   font-style: italic;
   color: #555;
+  font-family: "Ubuntu Mono";
 }
 
 /* Lists */
@@ -40,19 +43,24 @@ ul {
   margin: 20px 0;
   padding: 0 20px;
   list-style-type: disc;
+  font-family: "Ubuntu Mono";
 }
 
 li {
   margin-bottom: 10px;
+  font-family: "Ubuntu Mono";
 }
 
 /* Links */
 a {
-  color: #008cba;
+  max-width: 200px;
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
   text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
+  border-radius: 8px;
 }
 
 /* Images */
@@ -101,6 +109,15 @@ video {
   padding: 20px;
 }
 
+.clickable-image img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.clickable-image:hover img {
+  transform: scale(1.1) rotate(5deg); /* Zoom in and rotate slightly */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add a shadow */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   h1 {
@@ -126,4 +143,26 @@ video {
   p {
     font-size: 0.9rem;
   }
+}
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+header nav ul li {
+  margin: 0 10px;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=styles.css.map */
